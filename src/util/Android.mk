@@ -32,7 +32,8 @@ include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := \
 	$(MESA_UTIL_FILES) \
-	$(XMLCONFIG_FILES)
+	$(XMLCONFIG_FILES) \
+	u_debug_stack_android.cpp
 
 LOCAL_MODULE := libmesa_util
 

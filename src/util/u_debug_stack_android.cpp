@@ -21,7 +21,7 @@
  * IN THE SOFTWARE.
  */
 
-#include <backtrace/Backtrace.h>
+//#include <backtrace/Backtrace.h>
 
 #include "util/u_debug.h"
 #include "u_debug_stack.h"
@@ -51,6 +51,7 @@ debug_backtrace_capture(debug_stack_frame *backtrace,
                         unsigned start_frame,
                         unsigned nr_frames)
 {
+#if 0
    Backtrace *bt;
 
    if (!nr_frames)
@@ -85,6 +86,7 @@ debug_backtrace_capture(debug_stack_frame *backtrace,
    mtx_unlock(&table_mutex);
 
    delete bt;
+#endif
 }
 
 void

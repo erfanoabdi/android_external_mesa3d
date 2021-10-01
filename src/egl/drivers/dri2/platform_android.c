@@ -1247,7 +1247,7 @@ droid_add_configs_for_visuals(_EGLDisplay *disp)
       if (visuals[i].format == HAL_PIXEL_FORMAT_BGRA_8888 && has_rgba)
          continue;
       for (int j = 0; dri2_dpy->driver_configs[j]; j++) {
-         const EGLint surface_type = EGL_WINDOW_BIT | EGL_PBUFFER_BIT;
+         const EGLint surface_type = EGL_WINDOW_BIT | EGL_PBUFFER_BIT | EGL_SWAP_BEHAVIOR_PRESERVED_BIT;
 
          const EGLint config_attrs[] = {
            EGL_NATIVE_VISUAL_ID,   visuals[i].format,

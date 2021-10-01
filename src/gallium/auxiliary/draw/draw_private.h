@@ -229,7 +229,6 @@ struct draw_context
          unsigned min_index;
          unsigned max_index;
          unsigned drawid;
-         bool increment_draw_id;
          unsigned viewid;
          
          /** vertex arrays */
